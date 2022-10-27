@@ -1,0 +1,139 @@
+.box{
+    width: 100px;
+    height: 60px;
+    margin: 30px 100px;
+    border-radius: 8px;
+}
+
+.box-one{
+    background-color: lightsalmon;
+}
+
+.box-two{
+    background-color: peru;
+    transition: all 1.5s;
+}
+
+.box:hover{
+    transform: scale(1.5);
+}
+
+/* Circulitos */
+.circle1, .circle2, .circle3, .circle4, .circle5{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin: 12px;
+}
+.circle1{
+    background-color: lightblue;
+    transition: all 1.5s linear;
+}
+.circle2{
+    background-color: rgb(250, 250, 177);
+    transition: all 1.5s ease-in;
+}
+.circle3{
+    background-color: lightgreen;
+    transition: all 1.5s ease-out;
+}
+.circle4{
+    background-color: lightcoral;
+    transition: all 1.5s ease-in-out;
+}
+.circle5{
+    background-color: lightseagreen;
+    transition: all 1.5s ease;
+}
+
+.circle:hover .circle1,
+.circle:hover .circle2,
+.circle:hover .circle3,
+.circle:hover .circle4,
+.circle:hover .circle5{
+    transform: translateX(200px);
+}
+
+/* Cuadraditos */
+.square{
+    margin: 50px;
+}
+
+.square1{
+    background-color: mediumpurple;
+}
+
+.square2{
+    background-color: mediumorchid;
+    transition: all 0.5s ease-in-out;
+}
+.square1, .square2{
+    height: 100px;
+    width: 100px;
+    border-radius: 8px;
+    margin: 50px;
+    position: absolute;
+}
+
+.square2:hover{
+    transform: translate(30px, 30px);
+}
+
+/* Combinado */
+.combinado{
+    height: 75px;
+    width: 75px;
+    margin: 250px auto;
+    background-color: pink;
+    transition: all 2s;
+}
+
+.combinado:hover{
+    transform: rotate(90deg) scale(1.5) translateX(140px);
+    /* esta combinacion se puede vr mal en algunos navegadores por eso agregamos: */
+    -webkit-transform: rotate(90deg) scale(1.5) translateX(140px);
+    -o-transform: rotate(90deg) scale(1.5) translateX(140px);
+    -moz-transform: rotate(90deg) scale(1.5) translateX(140px);
+}
+
+/* Animaciones */
+.animacion{
+    width: 120px;
+    height: 120px;
+    margin: 150px auto;
+    background-color: lightseagreen;
+}
+
+.animacion:hover{
+    animation: cambiodecolor 4s;
+}
+@keyframes cambiodecolor {
+    50%{
+        background-color: limegreen;
+    }
+    15%{
+        background-color: yellow;
+        border-radius: 50%;
+    }
+    25%{
+        width: 400px;
+    }
+    50%{
+        background-color: blueviolet;
+    }
+    75%{
+        border-radius: 0;
+    }
+    100%{
+        background-color: black;
+    }
+}
+.div{
+    font-size: 20px;
+    margin: 20px auto;
+}
+
+.div2{
+    margin-top: 1200px;
+    
+}
